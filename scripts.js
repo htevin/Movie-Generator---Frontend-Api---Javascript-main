@@ -6,7 +6,7 @@ const randomBtn = document.getElementById('randomBtn')
 
 const getMovies = async (search) => {
   let response = await fetch(
-    `http://www.omdbapi.com/?apikey=1f67fc13&s=${search}`
+    `https://www.omdbapi.com/?apikey=1f67fc13&s=${search}`
   );
   let data = await response.json();
   let newData = data.Search;
